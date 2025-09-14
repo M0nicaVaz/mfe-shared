@@ -1,9 +1,6 @@
-"use client";
-import React from 'react';
-
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  label?: string;
-};
+'use client';
+import type { ButtonHTMLAttributes } from 'react';
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & { label?: string };
 
 export function Button({ label, children, ...props }: ButtonProps) {
   return (
