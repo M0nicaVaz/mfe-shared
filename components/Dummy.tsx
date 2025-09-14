@@ -2,5 +2,5 @@
 import React from 'react';
 
 export function Dummy() {
-  return <span>Dummy Component</span>;
+  return <span>Dummy Component wohoo</span>;
 }
