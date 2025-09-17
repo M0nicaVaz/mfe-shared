@@ -1,0 +1,48 @@
+@use "../../styles/tokens.scss" as *;
+
+.input {
+  width: 100%;
+  height: $size-48;
+  padding: $padding-none $padding-md;
+  border-radius: $radius-xl;
+  border: $border-width-sm solid $color-border-500;
+  font-size: $body-sm;
+  background-color: $color-bg-100;
+
+  &:focus {
+    border: 2px solid $color-brand-500;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $color-text-200;
+    opacity: 1;
+  }
+
+  &.error {
+    border-color: $color-error;
+  }
+
+  &:disabled {
+    background-color: $color-border-200;
+    border: none;
+    color: $color-text-200;
+    cursor: not-allowed;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: $margin-xs;
+  margin-left: $margin-xs;
+  font-size: $body-sm;
+  color: $color-text-300;
+}
+
+.errorMessage {
+  display: block;
+  color: $color-error;
+  font-size: $body-sm;
+  margin-left: $margin-xs;
+  margin-top: $margin-sm;
+}

@@ -1,0 +1,100 @@
+//Colors
+$color-brand-100: #ece8ff;
+$color-brand-200: #dcd4ff;
+$color-brand-300: #c1b2ff;
+$color-brand-400: #a98dff;
+$color-brand-500: #8755fd;
+$color-brand-600: #7932f5;
+$color-primary-accent-100: #ffcec7;
+$color-primary-accent-200: #ffaba0;
+$color-primary-accent-300: #ff6854;
+$color-primary-accent-400: #c12814;
+$color-secondary-accent-100: #ffd81b;
+$color-secondary-accent-200: #ffb800;
+$color-secondary-accent-300: #e28d00;
+$color-secondary-accent-400: #bb6302;
+$color-bg-100: #fafaff;
+$color-bg-200: #dbdbfe;
+$color-bg-300: #bfbffe;
+$color-bg-400: #9397fd;
+$color-text-100: #f6f6f6;
+$color-text-200: #6e6e6e;
+$color-text-300: #2e2e2e;
+$color-border-100: #f4f5f9;
+$color-border-200: #ebecf4;
+$color-border-300: #d9dbe9;
+$color-border-400: #c4c7dd;
+$color-border-500: #acadcd;
+$color-error: $color-primary-accent-300;
+$color-success: #15b584;
+
+// Typography
+$font-family-sans: "Inter", sans-serif;
+
+//Font Size
+$body-sm: 0.875rem; // 14px
+$body-md: 1rem; // 16px
+$body-lg: 1.25rem; // 20px
+$title-sm: 1.5rem; // 24px
+$title-md: 2rem; // 32px
+$title-lg: 2.25rem; // 36px
+$heading: 2.625rem; // 42px
+
+//Line Height
+$line-height-sm: 1.25; // 20px
+$line-height-md: 1.5; // 24px
+$line-height-lg: 1.75; // 28px
+$line-height-xl: 2; // 32px
+
+//Font Weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+//Spacing
+$spacing-none: 0rem; // 0px
+$spacing-sm: 0.5rem; // 8px
+$spacing-md: 1rem; // 16px
+$spacing-lg: 2rem; // 32px
+
+//Margin
+$margin-none: 0rem; // 0px
+$margin-xs: 0.25rem; // 4px
+$margin-sm: 0.5rem; // 8px
+$margin-md: 1rem; // 16px
+$margin-lg: 2rem; // 32px
+
+//Padding
+$padding-none: 0rem; // 0px
+$padding-sm: 0.5rem; // 8px
+$padding-md: 1rem; // 16px
+$padding-lg: 2rem; // 32px
+$padding-xl: 3rem; // 48px
+
+//Size
+$size-8: 0.5rem; // 8px
+$size-16: 1rem; // 16px
+$size-24: 1.5rem; // 24px
+$size-32: 2rem; // 32px
+$size-40: 2.5rem; // 40px
+$size-48: 3rem; // 48px
+$size-56: 3.5rem; // 56px
+$size-64: 4rem; // 64px
+$size-72: 4.5rem; // 72px
+$size-80: 5rem; // 80px
+$size-96: 6rem; // 96px
+
+//Radius
+$radius-none: 0rem; // 0px
+$radius-sm: 0.125rem; // 2px
+$radius-md: 0.25rem; // 4px
+$radius-lg: 0.5rem; // 8px
+$radius-xl: 1rem; // 16px
+$radius-full: 9999px; // Circular
+
+//Border
+$border-width-none: 0px;
+$border-width-sm: 1px; // 1px
+$border-width-md: 2px; // 2px
+$border-width-lg: 4px; // 4px

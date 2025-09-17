@@ -1,0 +1,58 @@
+@use "../../styles/tokens.scss" as *;
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: $size-48;
+  padding: $padding-none $padding-md;
+  border-radius: $radius-xl;
+  border: $border-width-sm solid $color-border-500;
+  font-size: $body-sm;
+  background-color: $color-bg-100;
+
+  &:focus {
+    border: $border-width-md solid $color-brand-500;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $color-text-200;
+  }
+
+  &:disabled {
+    background-color: $color-border-200;
+    border: none;
+    color: $color-text-200;
+    cursor: not-allowed;
+  }
+}
+
+.inputSelectContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $color-brand-400;
+  pointer-events: none;
+}
+
+.label {
+  display: block;
+  margin-bottom: $margin-xs;
+  margin-left: $margin-xs;
+  font-size: $body-sm;
+  color: $color-text-300;
+}

@@ -1,0 +1,88 @@
+@use "../../styles/tokens.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.button {
+  border: none;
+  height: $size-40;
+  padding: 0 $padding-md 0 $padding-md;
+  border-radius: $radius-full;
+  font-size: $body-md;
+  font-weight: $font-weight-semibold;
+  border: $border-width-md solid trasparent;
+
+  &.primary {
+    background-color: $color-brand-400;
+    color: $color-text-100;
+
+    &:hover {
+      background-color: $color-brand-500;
+    }
+
+    &:active {
+      background-color: $color-primary-accent-200;
+    }
+    &.disabled {
+      background-color: $color-border-200;
+      color: $color-border-500;
+      cursor: not-allowed;
+    }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: $color-brand-400;
+    border: $border-width-md solid $color-brand-400;
+
+    &:hover {
+      border: $border-width-md solid $color-brand-500;
+      color: $color-brand-500;
+    }
+
+    &:active {
+      border: $border-width-md solid $color-primary-accent-200;
+      color: $color-primary-accent-200;
+    }
+    &.disabled {
+      color: $color-border-500;
+      border: $border-width-md solid $color-border-200;
+      cursor: not-allowed;
+    }
+  }
+
+  &.tertiary {
+    background-color: transparent;
+    color: $color-brand-400;
+
+    &:hover {
+      color: $color-brand-500;
+    }
+
+    &:active {
+      color: $color-primary-accent-200;
+    }
+    &.disabled {
+      color: $color-border-500;
+      cursor: not-allowed;
+    }
+    &.reverse {
+      color: $color-text-100;
+    }
+  }
+
+  &.small {
+    height: $size-32;
+    font-size: $body-sm;
+    font-weight: $font-weight-regular;
+  }
+
+  &.large {
+    height: $size-48;
+    padding: 0 $padding-lg 0 $padding-lg;
+  }
+
+  @include tablet-portrait {
+    height: $size-32;
+    font-size: $body-sm;
+    font-weight: $font-weight-regular;
+  }
+}
