@@ -4,3 +4,4 @@ export { Divider } from './components/Divider';
 export { IconButton } from './components/IconButton';
 export { InputSelect } from './components/InputSelect';
 export { InputText } from './components/InputText';
+export { MenuHamburgerContent } from './components/MenuHamburgerContent';

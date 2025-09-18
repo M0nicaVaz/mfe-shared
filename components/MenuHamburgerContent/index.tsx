@@ -9,7 +9,7 @@ interface MenuHamburguerProps {
   content: React.ReactNode;
 }
 
-export default function MenuHamburgerContent({
+export function MenuHamburgerContent({
   isOpen,
   onClose,
   content,
