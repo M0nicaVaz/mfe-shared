@@ -9,6 +9,19 @@
   font-size: $body-md;
   font-weight: $font-weight-semibold;
   border: $border-width-md solid trasparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: $margin-md;
+    svg {
+      width: 1em;
+      height: 1em;
+    }
+  }
 
   &.primary {
     background-color: $color-brand-400;
@@ -66,6 +79,12 @@
     }
     &.reverse {
       color: $color-text-100;
+      &:hover {
+        color: $color-brand-500;
+      }
+      &:active {
+        color: $color-primary-accent-200;
+      }
     }
   }
 

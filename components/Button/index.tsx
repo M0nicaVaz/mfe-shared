@@ -8,6 +8,7 @@ type ButtonProps = {
   onClick?: () => void;
   disabled?: boolean;
   reverse?: boolean;
+  iconLeft?: React.ReactNode;
 };
 
 export function Button({
@@ -17,6 +18,7 @@ export function Button({
   reverse = false,
   onClick,
   disabled = false,
+  iconLeft,
 }: ButtonProps) {
   return (
     <button
@@ -26,6 +28,7 @@ export function Button({
       onClick={disabled ? undefined : onClick}
       disabled={disabled}
     >
+      {iconLeft && <span className={styles.icon}>{iconLeft}</span>}
       {label}
     </button>
   );
