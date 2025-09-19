@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { ExpandMore } from "@mui/icons-material";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 
 export interface InputSelectProps {
   name: string;
