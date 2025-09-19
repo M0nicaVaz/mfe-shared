@@ -1,0 +1,94 @@
+@use "../../styles/tokens.scss" as *;
+
+.iconButton {
+  border: $border-width-sm solid transparent;
+  border-radius: $radius-full;
+  height: $size-56;
+  width: $size-56;
+  cursor: pointer;
+
+  svg {
+    width: $size-40;
+    height: $size-40;
+    fill: currentColor;
+  }
+
+  &.primary {
+    background-color: $color-brand-400;
+    color: $color-text-100;
+
+    &:hover {
+      background-color: $color-brand-500;
+    }
+
+    &:active {
+      background-color: $color-primary-accent-200;
+    }
+
+    &.disabled {
+      background-color: $color-border-200;
+      color: $color-border-500;
+      cursor: not-allowed;
+    }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: $color-brand-400;
+    border: $border-width-md solid $color-brand-400;
+
+    &:hover {
+      border: $border-width-md solid $color-brand-500;
+      color: $color-brand-500;
+    }
+
+    &:active {
+      border: $border-width-md solid $color-primary-accent-200;
+      color: $color-primary-accent-200;
+    }
+
+    &.disabled {
+      color: $color-border-500;
+      border: $border-width-md solid $color-border-200;
+      cursor: not-allowed;
+    }
+  }
+
+  &.tertiary {
+    color: $color-brand-400;
+    border: none;
+    background: none;
+
+    &:hover {
+      color: $color-brand-500;
+    }
+
+    &:active {
+      color: $color-primary-accent-200;
+    }
+    &.disabled {
+      color: $color-border-500;
+      cursor: not-allowed;
+    }
+  }
+
+  &.small {
+    height: $size-40;
+    width: $size-40;
+
+    svg {
+      width: $size-24;
+      height: $size-24;
+    }
+  }
+
+  &.large {
+    height: $size-80;
+    width: $size-80;
+
+    svg {
+      width: $size-56;
+      height: $size-56;
+    }
+  }
+}

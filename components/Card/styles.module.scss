@@ -1,0 +1,32 @@
+@use "../../styles/tokens.scss" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $color-bg-100;
+  border-radius: $radius-lg;
+  padding: $padding-md $padding-lg;
+  justify-content: center;
+  min-height: 0;
+
+  .title {
+    font-size: $title-sm;
+    margin-bottom: $margin-sm;
+    margin-top: $margin-md;
+    font-weight: $font-weight-semibold;
+    flex-shrink: 0;
+  }
+
+  &.secondary {
+    background-color: $color-brand-100;
+  }
+
+  .content {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: $padding-sm $padding-none;
+  }
+}
