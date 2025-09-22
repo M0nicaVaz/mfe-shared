@@ -31,7 +31,7 @@ export function parseCurrencyInput(rawValue: string): number {
 
 export const items = [
   { icon: HomeIcon, label: "Início", href: "/" },
-  { icon: CurrencyExchangeIcon, label: "Transferências", href: "" },
+  { icon: CurrencyExchangeIcon, label: "Transferências", href: "/statements" },
   { icon: PaidIcon, label: "Investimentos", href: "" },
   { icon: AccountBalanceIcon, label: "Outros serviços", href: "" },
 ];
