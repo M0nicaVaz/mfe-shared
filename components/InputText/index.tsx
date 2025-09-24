@@ -10,6 +10,7 @@ type InputTextProps = {
   errorMessage?: string;
   isError?: boolean;
   labelText?: string;
+  type?: React.HTMLInputTypeAttribute;
 };
 
 export function InputText({
@@ -21,6 +22,7 @@ export function InputText({
   errorMessage = "",
   isError = false,
   labelText = "",
+  type = "text",
 }: InputTextProps) {
   return (
     <div className={styles.inputContainer}>
@@ -31,6 +33,7 @@ export function InputText({
         onChange={onChange}
         placeholder={placeholder}
         disabled={disabled}
+        type={type}
         className={`${styles.input} ${isError ? styles.error : ""}`}
       />
       {isError && <span className={styles.errorMessage}>{errorMessage}</span>}
