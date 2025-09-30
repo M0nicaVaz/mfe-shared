@@ -30,3 +30,14 @@
     padding: $padding-sm $padding-none;
   }
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action {
+  cursor: pointer;
+}
