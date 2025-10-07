@@ -2,7 +2,11 @@ import { useRef, useState } from "react";
 import { Button } from "../Button";
 import styles from "./styles.module.scss";
 
-export function FileUploader() {
+interface FileUploaderProps {
+  onFileSelect?: (file: File) => void;
+}
+
+export function FileUploader({ onFileSelect }: FileUploaderProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [fileName, setFileName] = useState<string>("");
 
@@ -14,6 +18,7 @@ export function FileUploader() {
     if (event.target.files && event.target.files.length > 0) {
       const file = event.target.files[0];
       setFileName(file.name);
+      onFileSelect?.(file);
     }
   };
 
@@ -22,6 +27,7 @@ export function FileUploader() {
       <input
         ref={fileInputRef}
         type="file"
+        accept="image/*,.pdf"
         className={styles.fileInput}
         style={{ display: "none" }}
         onChange={handleChange}

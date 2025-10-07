@@ -7,7 +7,7 @@ type InputTextProps = {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   disabled?: boolean;
-  errorMessage?: string;
+  errorMessage?: string | null;
   isError?: boolean;
   labelText?: string;
   type?: React.HTMLInputTypeAttribute;

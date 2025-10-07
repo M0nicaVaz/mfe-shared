@@ -35,3 +35,12 @@ export const items = [
   { icon: PaidIcon, label: "Investimentos", href: "" },
   { icon: AccountBalanceIcon, label: "Outros serviços", href: "" },
 ];
+
+export async function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
