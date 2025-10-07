@@ -1,0 +1,12 @@
+@use "../../styles/tokens.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileName {
+  font-size: $body-sm;
+  color: $color-text-200;
+  margin-top: $margin-sm;
+}
