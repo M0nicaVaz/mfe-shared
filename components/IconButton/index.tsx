@@ -9,6 +9,7 @@ type IconButtonProps = {
   disabled?: boolean;
   priority?: "primary" | "secondary" | "tertiary";
   size?: "small" | "medium" | "large";
+  ariaLabel?: string;
 };
 
 export function IconButton({
@@ -17,9 +18,11 @@ export function IconButton({
   priority = "primary",
   disabled = false,
   size = "medium",
+  ariaLabel = "",
 }: IconButtonProps) {
   return (
     <button
+      aria-label={ariaLabel}
       className={`${styles.iconButton} ${styles[priority]} ${styles[size]} ${
         disabled ? styles.disabled : ""
       }`}
