@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useState } from "react";
 import { Button } from "../Button";
 import styles from "./styles.module.scss";
