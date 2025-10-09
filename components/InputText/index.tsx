@@ -16,7 +16,7 @@ type InputTextProps = {
 };
 
 export function InputText({
-  name = "",
+  name,
   value,
   onChange,
   placeholder = "",
@@ -26,19 +26,34 @@ export function InputText({
   labelText = "",
   type = "text",
 }: InputTextProps) {
+  const inputId = `${name}-input`;
+
   return (
     <div className={styles.inputContainer}>
-      {labelText && <label className={styles.label}>{labelText}</label>}
+      {labelText && (
+        <label htmlFor={inputId} className={styles.label}>
+          {labelText}
+        </label>
+      )}
+
       <input
+        id={inputId}
         name={name}
         value={value}
         onChange={onChange}
         placeholder={placeholder}
         disabled={disabled}
         type={type}
+        aria-invalid={isError}
+        aria-describedby={isError ? `${inputId}-error` : undefined}
         className={`${styles.input} ${isError ? styles.error : ""}`}
       />
-      {isError && <span className={styles.errorMessage}>{errorMessage}</span>}
+
+      {isError && (
+        <span id={`${inputId}-error`} className={styles.errorMessage}>
+          {errorMessage}
+        </span>
+      )}
     </div>
   );
 }

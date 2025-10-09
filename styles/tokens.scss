@@ -2,31 +2,37 @@
 $color-brand-100: #ece8ff;
 $color-brand-200: #dcd4ff;
 $color-brand-300: #c1b2ff;
-$color-brand-400: #a98dff;
-$color-brand-500: #8755fd;
-$color-brand-600: #7932f5;
-$color-primary-accent-100: #ffcec7;
-$color-primary-accent-200: #ffaba0;
-$color-primary-accent-300: #ff6854;
-$color-primary-accent-400: #c12814;
+$color-brand-400: #7440e6;
+$color-brand-500: #5d2adf;
+$color-brand-600: #4a1fc0;
+
+$color-primary-accent-100: #ffd5cd;
+$color-primary-accent-200: #ffb1a4;
+$color-primary-accent-300: #e44a31;
+$color-primary-accent-400: #b2220e;
+
 $color-secondary-accent-100: #ffd81b;
 $color-secondary-accent-200: #ffb800;
-$color-secondary-accent-300: #e28d00;
-$color-secondary-accent-400: #bb6302;
+$color-secondary-accent-300: #e29e00;
+$color-secondary-accent-400: #b27100;
+
 $color-bg-100: #fafaff;
 $color-bg-200: #dbdbfe;
 $color-bg-300: #bfbffe;
-$color-bg-400: #9397fd;
-$color-text-100: #f6f6f6;
-$color-text-200: #6e6e6e;
-$color-text-300: #2e2e2e;
+$color-bg-400: #8d91fc;
+
+$color-text-100: #ffffff;
+$color-text-200: #5a5a5a;
+$color-text-300: #1e1e1e;
+
 $color-border-100: #f4f5f9;
 $color-border-200: #ebecf4;
 $color-border-300: #d9dbe9;
 $color-border-400: #c4c7dd;
-$color-border-500: #acadcd;
-$color-error: $color-primary-accent-300;
-$color-success: #15b584;
+$color-border-500: #a6a8c6;
+
+$color-error: #b71c1c;
+$color-success: #0f6b52;
 
 // Typography
 $font-family-sans: "Inter", sans-serif;
@@ -37,7 +43,7 @@ $body-md: 1rem; // 16px
 $body-lg: 1.25rem; // 20px
 $title-sm: 1.5rem; // 24px
 $title-md: 2rem; // 32px
-$title-lg: 2.25rem; // 36px
+$title-lg: 2.25rem; // 36pxprimary
 $heading: 2.625rem; // 42px
 
 //Line Height
