@@ -12,6 +12,16 @@
       "import": "./index.ts",
       "default": "./index.ts"
     },
+    "./data": {
+      "types": "./data/index.ts",
+      "import": "./data/index.ts",
+      "default": "./data/index.ts"
+    },
+    "./types": {
+      "types": "./types/transaction.ts",
+      "import": "./types/transaction.ts",
+      "default": "./types/transaction.ts"
+    },
     "./package.json": "./package.json"
   },
   "sideEffects": false,
