@@ -11,13 +11,28 @@ type CardProps = {
   actionIcon?: React.ReactNode;
 };
 
-export function Card({ title, children, color = "primary", action, actionIcon }: CardProps) {
+export function Card({
+  title,
+  children,
+  color = "primary",
+  action,
+  actionIcon,
+}: CardProps) {
   return (
-    <div className={`${styles.card} ${styles[color]}`}>
+    <div
+      className={`${styles.card} ${styles[color]}`}
+      aria-labelledby={title ? "card-title" : undefined}
+    >
       <div className={styles.header}>
-        {title && <h3 className={styles.title}>{title}</h3>}
+        {title && (
+          <h2 id="card-title" className={styles.title} tabIndex={0}>
+            {title}
+          </h2>
+        )}
         {action && actionIcon && (
-          <div className={styles.action} onClick={action}>{actionIcon}</div>
+          <button className={styles.action} onClick={action} aria-label="Ação">
+            {actionIcon}
+          </button>
         )}
       </div>
       <div className={styles.content}>{children}</div>
