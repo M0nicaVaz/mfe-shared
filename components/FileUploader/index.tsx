@@ -1,14 +1,15 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "../Button";
 import styles from "./styles.module.scss";
 
 interface FileUploaderProps {
   onFileSelect?: (file: File) => void;
+  file?: File | Blob | undefined;
 }
 
-export function FileUploader({ onFileSelect }: FileUploaderProps) {
+export function FileUploader({ onFileSelect, file }: FileUploaderProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [fileName, setFileName] = useState<string>("");
 
@@ -23,6 +24,15 @@ export function FileUploader({ onFileSelect }: FileUploaderProps) {
       onFileSelect?.(file);
     }
   };
+
+  useEffect(() => {
+    if (!file) {
+      setFileName("");
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
+    }
+  }, [file]);
 
   return (
     <div className={styles.container}>

@@ -13,6 +13,9 @@ export type Attachment = {
   type: string;
   size: number;
   base64?: string;
+  file?: File;
+  key?: string;
+  url?: string;
 };
 
 export type TransactionDTO = {
