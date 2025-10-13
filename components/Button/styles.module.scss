@@ -2,13 +2,12 @@
 @use '../../styles/mixins.scss' as *;
 
 .button {
-  border: none;
   height: $size-40;
   padding: 0 $padding-md 0 $padding-md;
   border-radius: $radius-full;
   font-size: $body-md;
   font-weight: $font-weight-semibold;
-  border: $border-width-md solid trasparent;
+  border: $border-width-md solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
