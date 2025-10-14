@@ -26,6 +26,7 @@ export type TransactionDTO = {
   direction: TransactionDirection;
   type: TransactionType;
   attachment?: Attachment;
+  userId?: string;
 };
 
 export type TransactionCreateInput = {
